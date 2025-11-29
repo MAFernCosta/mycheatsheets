@@ -7,7 +7,7 @@
       "files": [
         {
           "name": "Simple Commands",
-          "path": "/cheatsheets/linux/linuxbash.html"
+          "path": "/linux/linuxbash.html"
         }
       ]
     },
@@ -16,15 +16,15 @@
       "files": [
         {
           "name": "SQL.md",
-          "path": "/cheatsheets/sql/SQL.md"
+          "path": "/sql/SQL.md"
         },
         {
           "name": "Datensätze_einfügen_und_lesen.md",
-          "path": "/cheatsheets/sql/SQL-Datensaetze_einfuegen_und_lesen.md"
+          "path": "/sql/SQL-Datensaetze_einfuegen_und_lesen.md"
         },
         {
           "name": "Table",
-          "path": "/cheatsheets/sql/Resumedtable.md"
+          "path": "/sql/Resumedtable.md"
         }
       ]
     },
