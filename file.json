@@ -1,0 +1,36 @@
+{
+  "title": "dev-cheatsheet",
+  "description": "This is the default cheatsheet source.",
+  "category": [
+    {
+      "name": "Linux",
+      "files": [
+        {
+          "name": "Simple Commands",
+          "path": "/cheatsheets/linux/linuxbash.html"
+        }
+      ]
+    },
+    {
+      "name": "SQL",
+      "files": [
+        {
+          "name": "SQL.md",
+          "path": "/cheatsheets/sql/SQL.md"
+        },
+        {
+          "name": "Datensätze_einfügen_und_lesen.md",
+          "path": "/cheatsheets/sql/SQL-Datensaetze_einfuegen_und_lesen.md"
+        },
+        {
+          "name": "Table",
+          "path": "/cheatsheets/sql/Resumedtable.md"
+        }
+      ]
+    },
+    {
+      "name": "Windows",
+      "files": []
+    }
+  ]
+}

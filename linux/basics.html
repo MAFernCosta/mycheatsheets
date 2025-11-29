@@ -1,0 +1,477 @@
+<div className="container">
+    <h1>Linux Commands Cheat Sheet</h1>
+    <div className="py-3">Quick reference extracted and organized into categories. Copy, tweak, and extend as
+        needed.</div>
+    <div className="row row-cols-1 row-cols-lg-2">
+        <!-- File Commands -->
+        <div className="col">
+            <h2>File Commands</h2>
+            <table className="table">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>ls</td>
+                    <td>List the content of the current directory</td>
+                </tr>
+                <tr>
+                    <td>ls -R</td>
+                    <td>List subdirectories recursively</td>
+                </tr>
+                <tr>
+                    <td>ls -a</td>
+                    <td>List all content, including hidden files</td>
+                </tr>
+                <tr>
+                    <td>ls -l</td>
+                    <td>List content with detailed information</td>
+                </tr>
+                <tr>
+                    <td>pwd</td>
+                    <td>Show the current directory</td>
+                </tr>
+                <tr>
+                    <td>cd folder1</td>
+                    <td>Change directory to <code>folder1</code></td>
+                </tr>
+                <tr>
+                    <td>cd</td>
+                    <td>Return to <code>$HOME</code> directory</td>
+                </tr>
+                <tr>
+                    <td>cd ..</td>
+                    <td>Go up one directory</td>
+                </tr>
+                <tr>
+                    <td>cd -</td>
+                    <td>Return to the previous directory</td>
+                </tr>
+                <tr>
+                    <td>cp source destination</td>
+                    <td>Copy file</td>
+                </tr>
+                <tr>
+                    <td>cp -r source destination</td>
+                    <td>Copy folder recursively</td>
+                </tr>
+                <tr>
+                    <td>mv source destination</td>
+                    <td>Move or rename file</td>
+                </tr>
+                <tr>
+                    <td>rm file1</td>
+                    <td>Remove file</td>
+                </tr>
+                <tr>
+                    <td>rm -f file1</td>
+                    <td>Force remove file without prompt</td>
+                </tr>
+                <tr>
+                    <td>rm -r folder</td>
+                    <td>Remove folder and its contents recursively</td>
+                </tr>
+                <tr>
+                    <td>mkdir foldername</td>
+                    <td>Create a new folder</td>
+                </tr>
+                <tr>
+                    <td>rmdir foldername</td>
+                    <td>Remove an empty folder</td>
+                </tr>
+                <tr>
+                    <td>file file1</td>
+                    <td>Show file type</td>
+                </tr>
+                <tr>
+                    <td>cat file1 file2</td>
+                    <td>Concatenate files</td>
+                </tr>
+                <tr>
+                    <td>cat &gt; file1</td>
+                    <td>Write standard input to file</td>
+                </tr>
+                <tr>
+                    <td>less file1</td>
+                    <td>View file (paged)</td>
+                </tr>
+                <tr>
+                    <td>head file1</td>
+                    <td>Show first 10 lines</td>
+                </tr>
+                <tr>
+                    <td>tail file1</td>
+                    <td>Show last 10 lines</td>
+                </tr>
+                <tr>
+                    <td>chmod 777 file</td>
+                    <td>Change file permission</td>
+                </tr>
+                <tr>
+                    <td>chown user:group file</td>
+                    <td>Change file ownership</td>
+                </tr>
+                <tr>
+                    <td>ln -s source destination</td>
+                    <td>Create symbolic link</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- System Commands -->
+        <div className="col">
+            <h2>System Commands</h2>
+            <table className="table table-striped">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>uname -a</td>
+                    <td>Show system and kernel info</td>
+                </tr>
+                <tr>
+                    <td>head -n1 /etc/issue</td>
+                    <td>Show distribution information</td>
+                </tr>
+                <tr>
+                    <td>mount</td>
+                    <td>Show mounted filesystems</td>
+                </tr>
+                <tr>
+                    <td>date</td>
+                    <td>Show system date</td>
+                </tr>
+                <tr>
+                    <td>uptime</td>
+                    <td>Show system uptime</td>
+                </tr>
+                <tr>
+                    <td>whoami</td>
+                    <td>Show current username</td>
+                </tr>
+                <tr>
+                    <td>w</td>
+                    <td>Show who is online</td>
+                </tr>
+                <tr>
+                    <td>man command</td>
+                    <td>Show manual page</td>
+                </tr>
+                <tr>
+                    <td>mount -o loop cdrom.iso /mnt/dir</td>
+                    <td>Mount ISO image</td>
+                </tr>
+                <tr>
+                    <td>cat /proc/partitions</td>
+                    <td>Show registered partitions</td>
+                </tr>
+                <tr>
+                    <td>grep MemTotal /proc/meminfo</td>
+                    <td>Show total RAM</td>
+                </tr>
+                <tr>
+                    <td>grep "model name" /proc/cpuinfo</td>
+                    <td>Show CPU info</td>
+                </tr>
+                <tr>
+                    <td>lspci -tv</td>
+                    <td>Show PCI devices</td>
+                </tr>
+                <tr>
+                    <td>lsusb -tv</td>
+                    <td>Show USB devices</td>
+                </tr>
+                <tr>
+                    <td>!!</td>
+                    <td>Repeat last command</td>
+                </tr>
+                <tr>
+                    <td>exit</td>
+                    <td>Logout / exit shell</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- File Searching -->
+        <div className="col">
+            <h2>File Searching</h2>
+            <table className="table table-striped">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>grep pattern files</td>
+                    <td>Search for pattern in files</td>
+                </tr>
+                <tr>
+                    <td>grep -i</td>
+                    <td>Case-insensitive search</td>
+                </tr>
+                <tr>
+                    <td>grep -r</td>
+                    <td>Recursive search</td>
+                </tr>
+                <tr>
+                    <td>grep -v</td>
+                    <td>Invert match</td>
+                </tr>
+                <tr>
+                    <td>grep -o</td>
+                    <td>Show only matched part</td>
+                </tr>
+                <tr>
+                    <td>locate file1</td>
+                    <td>Find by name (database)</td>
+                </tr>
+                <tr>
+                    <td>whereis command</td>
+                    <td>Locate binary/source/manual</td>
+                </tr>
+                <tr>
+                    <td>which app</td>
+                    <td>Show path of command</td>
+                </tr>
+                <tr>
+                    <td>look string file1</td>
+                    <td>Lines starting with string</td>
+                </tr>
+                <tr>
+                    <td>find /dir/ -user name</td>
+                    <td>Find files owned by user</td>
+                </tr>
+                <tr>
+                    <td>find /dir/ -mmin num</td>
+                    <td>Modified less than num minutes ago</td>
+                </tr>
+                <tr>
+                    <td>find /dir/ -name 'name*'</td>
+                    <td>Names starting with value</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Encryption & Compression -->
+        <div className="col">
+            <h2>Encryption &amp; Compression</h2>
+            <table className="table table-striped">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>gpg -c file</td>
+                    <td>Encrypt file (symmetric)</td>
+                </tr>
+                <tr>
+                    <td>gpg file.gpg</td>
+                    <td>Decrypt file</td>
+                </tr>
+                <tr>
+                    <td>tar -cf archive.tar foo bar</td>
+                    <td>Create tar archive</td>
+                </tr>
+                <tr>
+                    <td>tar -xf archive.tar</td>
+                    <td>Extract tar archive</td>
+                </tr>
+                <tr>
+                    <td>tar -czf archive.tar.gz foo bar</td>
+                    <td>Create gzip-compressed tar</td>
+                </tr>
+                <tr>
+                    <td>tar -xzf archive.tar.gz</td>
+                    <td>Extract gzip-compressed tar</td>
+                </tr>
+                <tr>
+                    <td>tar -cjf archive.tar.bz2 foo bar</td>
+                    <td>Create bzip2-compressed tar</td>
+                </tr>
+                <tr>
+                    <td>tar -xjf archive.tar.bz2</td>
+                    <td>Extract bzip2-compressed tar</td>
+                </tr>
+                <tr>
+                    <td>gzip file1</td>
+                    <td>Compress file (to .gz)</td>
+                </tr>
+                <tr>
+                    <td>gzip -d file1.gz</td>
+                    <td>Decompress .gz file</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Process Management -->
+        <div className="col">
+            <h2>Process Management</h2>
+            <table className="table table-striped">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>ps</td>
+                    <td>Snapshot of processes</td>
+                </tr>
+                <tr>
+                    <td>top</td>
+                    <td>Interactive process viewer</td>
+                </tr>
+                <tr>
+                    <td>kill pid</td>
+                    <td>Kill process by PID</td>
+                </tr>
+                <tr>
+                    <td>pkill name</td>
+                    <td>Kill by process name</td>
+                </tr>
+                <tr>
+                    <td>killall name</td>
+                    <td>Kill all with matching name</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Keyboard Shortcuts -->
+        <div className="col">
+            <h2>Keyboard Shortcuts</h2>
+            <table className="table table-striped">
+                <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Ctrl + Shift + C</td>
+                    <td>Copy highlighted text (terminal)</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + Shift + V</td>
+                    <td>Paste copied text (terminal)</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + Z</td>
+                    <td>Suspend current process</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + C</td>
+                    <td>Interrupt/stop current command</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + R</td>
+                    <td>Search command history</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + U</td>
+                    <td>Delete from start of line</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + K</td>
+                    <td>Delete to end of line</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + A</td>
+                    <td>Move to start of line</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + E</td>
+                    <td>Move to end of line</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- SSH -->
+        <div className="col">
+            <h2>SSH &amp; SCP</h2>
+            <table className="table table-striped">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>ssh $USER@$HOST</td>
+                    <td>Connect to remote host</td>
+                </tr>
+                <tr>
+                    <td>ssh $USER@$HOST command</td>
+                    <td>Run remote command</td>
+                </tr>
+                <tr>
+                    <td>ssh $USER@$HOST -p 1234</td>
+                    <td>Connect on specific port</td>
+                </tr>
+                <tr>
+                    <td>scp file1 $USER@$HOST:file1</td>
+                    <td>Copy file to remote host</td>
+                </tr>
+                <tr>
+                    <td>scp $USER@$HOST:file1 file1</td>
+                    <td>Copy file from remote host</td>
+                </tr>
+                <tr>
+                    <td>scp -r foo $USER@$HOST:/bar</td>
+                    <td>Copy directory to remote host</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Disk Space -->
+        <div className="col">
+            <h2>Disk &amp; Usage</h2>
+            <table className="table table-striped">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>df -h</td>
+                    <td>Show free space (human readable)</td>
+                </tr>
+                <tr>
+                    <td>df -i</td>
+                    <td>Show free inodes</td>
+                </tr>
+                <tr>
+                    <td>du -h folder</td>
+                    <td>Usage of each item in folder</td>
+                </tr>
+                <tr>
+                    <td>du -sh folder</td>
+                    <td>Total size of folder</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Packages & Info -->
+        <div className="col">
+            <h2>Packages &amp; System Info</h2>
+            <table className="table table-striped">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>dpkg -i package.deb</td>
+                    <td>Install Debian package</td>
+                </tr>
+                <tr>
+                    <td>rpm -Uvh package.rpm</td>
+                    <td>Install RPM package</td>
+                </tr>
+                <tr>
+                    <td>fdisk -l</td>
+                    <td>List disks/partitions</td>
+                </tr>
+                <tr>
+                    <td>free</td>
+                    <td>Show memory and swap usage</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div className="footer">
+        Tip: not all distributions behave identically; double-check options if something looks off.
+    </div>
+</div>
