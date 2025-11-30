@@ -3,7 +3,7 @@
 ## Login an DB (via CMD)
 
 ```bash
- mysql -u xyz -p -h localhost
+ mysql -u username -p -h localhost
 ```
 
 ## Database Create, Delete
@@ -247,9 +247,9 @@ SET
 
 ## String functions
 
-| Description   | SQL    |
-|---------------|--------|
-| Concatenation | CONCAT |
+| Description   | SQL                  |
+|---------------|----------------------|
+| Concatenation | `CONCAT(val1, val2)` |
 
 
 ## UPDATE 
