@@ -3,7 +3,7 @@
   "description": "This is the default cheatsheet source.",
   "category": [
     {
-      "name": "Linux - Bash",
+      "name": "Linux-Bash",
       "files": [
         {
           "name": "Bash - Basics",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "name": "Windows - cmd",
+      "name": "Windows-cmd",
       "files": [
          {
           "name": "Command line basics",
