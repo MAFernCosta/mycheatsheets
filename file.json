@@ -26,7 +26,12 @@
     },
     {
       "name": "Windows - cmd",
-      "files": []
+      "files": [
+         {
+          "name": "Command line basics",
+          "path": "/windows/cmd-basic.md"
+        }
+      ]
     },
     {
       "name": "Markdown",
