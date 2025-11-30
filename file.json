@@ -15,16 +15,12 @@
       "name": "SQL",
       "files": [
         {
-          "name": "SQL.md",
-          "path": "/sql/SQL.md"
+          "name": "Basics",
+          "path": "/sql/SQL_Basics.md"
         },
         {
-          "name": "Datensätze_einfügen_und_lesen.md",
-          "path": "/sql/SQL-Datensaetze_einfuegen_und_lesen.md"
-        },
-        {
-          "name": "Table",
-          "path": "/sql/Resumedtable.md"
+          "name": "Commands Summary",
+          "path": "/sql/Commands_Summary.md"
         }
       ]
     },
