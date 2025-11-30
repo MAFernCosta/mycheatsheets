@@ -3,11 +3,11 @@
   "description": "This is the default cheatsheet source.",
   "category": [
     {
-      "name": "Linux",
+      "name": "Linux - Bash",
       "files": [
         {
-          "name": "Simple Commands",
-          "path": "/linux/linuxbash.html"
+          "name": "Bash - Basics",
+          "path": "/linux/bash_basics.md"
         }
       ]
     },
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "name": "Windows",
+      "name": "Windows - cmd",
       "files": []
     },
     {
