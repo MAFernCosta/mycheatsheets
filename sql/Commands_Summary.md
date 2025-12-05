@@ -165,14 +165,15 @@ WHERE department = (
 
 ## Constraints
 
-| SQL            | Description           |
-|:---------------|:----------------------|
-| `NOT NULL`     | Cannot be NULL        |
-| `UNIQUE`       | Must be unique        |
-| `PRIMARY KEY`  | Unique row identifier |
-| `CHECK`        | Value restriction     |
-| `DEFAULT`      | Default value         |
-| `CREATE INDEX` | Create an index       |
+| SQL              | Description                                              |
+|:-----------------|:---------------------------------------------------------|
+| `NOT NULL`       | Cannot be NULL                                           |
+| `UNIQUE`         | Must be unique                                           |
+| `PRIMARY KEY`    | Unique row identifier                                    |
+| `CHECK`          | Value restriction                                        |
+| `DEFAULT`        | Default value                                            |
+| `CREATE INDEX`   | Create an index                                          |
+| `AUTO INCREMENT` | Increments value automatically (usefull for table index) |
 
 ### Example 
 
@@ -210,7 +211,7 @@ CREATE TABLE review (
 ## DELETE 
 
 ```SQL
-DELETE FROM WHERE id = 2;
+DELETE FROM tablename WHERE id = 2;
 ```
 
 ## SET Commands
