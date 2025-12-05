@@ -176,7 +176,7 @@ WHERE department = (
 
 ### Example 
 
-```sql
+```SQL
 CREATE TABLE review (
  review_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
  ratingstars TINYINT DEFAULT 3,
@@ -186,7 +186,7 @@ CREATE TABLE review (
 
 ### Foreign Key
 
-```sql
+```SQL
 ALTER TABLE review 
 ADD CONSTRAINT fk_game_review                   -- Relationship name 
 FOREIGN KEY (game_id) REFERENCES game(game_id);
@@ -196,7 +196,7 @@ ALTER TABLE review DROP FOREIGN KEY fk_user_review; -- Delete Relationship
 
 ### CHECK 
 
-```sql
+```SQL
 CREATE TABLE tablename (
     age INT CHECK (age >= 18)
 );
@@ -225,13 +225,13 @@ DELETE FROM WHERE id = 2;
 
 ### Show import directory
 
-```sql
+```SQL
 SHOW VARIABLES LIKE 'secure_file_priv';
 ```
 
 ### Load CSV File
 
-```sql
+```SQL
 LOAD DATA INFILE 'path\\to\\file.csv' -- path to the csv file don't forget to use \\ in windows
 INTO TABLE destinationtable     -- Destination of the import
 FIELDS TERMINATED BY ';'        -- Char that separates the field on the csv file
